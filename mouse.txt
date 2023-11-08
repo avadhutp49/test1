@@ -1,0 +1,29 @@
+Experiment9.js
+var x = document.getElementById("myForm");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+function myFocusFunction() {
+ document.getElementById("myInput").style.backgroundColor = "darkgrey";
+}
+function myBlurFunction() {
+ document.getElementById("myInput").style.backgroundColor = "";
+}
+• Experiment9.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Experiment-9</title>
+</head>
+<body>
+ <h1>Experiment-9</h1>
+ <h3>Name : Avadhut Santosh Pawar <br> Roll no. : E41100</h3>
+ <h2>Student Information Form</h2>
+ <form id="myForm">
+ <label> Student Name: <input type="text" id="myInput"> </label>
+ </form>
+</body>
+<script src="Experiment9.js"></script>
+</html>

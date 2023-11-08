@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Experiment 1</title>
+</head>
+<body>
+ <h1>Experiment No. 1 :- Program to Calculate area of triangle, area of rectangle and area of
+circle.</h1>
+ <h2>Name : Avadhut Santosh Pawar <br> Roll no. : E41100</h2>
+ <script>
+ document.write("Rectangle <br>");
+ var len = parseInt(prompt("Enter the Length of Rectangle "));
+ var bre = parseInt(prompt("Enter the Breadth of Rectangle "));
+ var rect_area = len*bre;
+ document.write("The Length of the Rectangle is = " +len +"<br>");
+ document.write("The Breadth of the Rectangle is = " +bre +"<br>");
+ document.write("Rectangle Area = " +rect_area +"<br><br>");
+
+ document.write("Triangle <br>");
+ var base = parseInt(prompt("Enter the Base of Triangle "));
+ var height = parseInt(prompt("Enter the Height of Triangle "));
+ var tri_area = 0.5*base*height;
+ document.write("The Base of the Triangle is = " +base +"<br>");
+ document.write("The Height of the Triangle is = " +height +"<br>");
+ document.write("Triangle Area =" +tri_area +"<br><br>");
+ document.write("Circle <br>");
+ var rad = parseInt(prompt("Enter the radius of Circle"));
+ var cir_area = 3.14*rad*rad;
+ document.write("The Radius of the Cirle is = " +rad +"<br>");
+ document.write("Circle Area =" +cir_area +"<br>");
+ </script>
+</body>
+</html>

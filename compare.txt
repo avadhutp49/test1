@@ -1,0 +1,69 @@
+JavaScript program to compare two strings using toUpperCase() method.
+Code:
+console.log("Experiment: 4");
+console.log("Name: Avadhut Santosh Pawar");
+console.log("Roll No: E41100");
+// Define two strings for comparison
+const string1 = 'JavaScript Program';
+const string2 = 'javascript program';
+// Print both strings
+console.log(`String 1: ${string1}`);
+console.log(`String 2: ${string2}`);
+// Compare both strings using the toUpperCase() method
+const result = string1.toUpperCase() === string2.toUpperCase();
+// Print the result
+if (result) {
+ console.log('The strings are similar.');
+} else {
+ console.log('The strings are not similar.');
+}
+
+
+
+#####################################################################
+
+JavaScript program to compare two strings using regular expression.
+Code:
+console.log("Experiment: 4B");
+console.log("Name: Avadhut Santosh Pawar");
+console.log("Roll No: E41100");
+// Define two strings for comparison
+const string1 = 'JavaScript Program';
+const string2 = 'javascript program';
+// Print both strings
+console.log(`String 1: ${string1}`);
+console.log(`String 2: ${string2}`);
+// Create a regex
+const pattern = new RegExp(string1, "gi");
+// Compare the strings using the regular expression
+const result = pattern.test(string2);
+// Print the result
+if (result) {
+ console.log('The strings are similar.');
+} else {
+ console.log('The strings are not similar.');
+}
+
+
+#####################################################################
+
+
+JavaScript program to compare two strings using localeCompare()
+Code:
+console.log("Experiment: 4C");
+console.log("Name: Avadhut Santosh Pawar");
+console.log("Roll No: E41100");
+// Define two strings for comparison
+const string1 = 'JavaScript Program';
+const string2 = 'javascript program';
+// Print both strings
+console.log(`String 1: ${string1}`);
+console.log(`String 2: ${string2}`);
+// Compare the strings using the localeCompare() method
+const result = string1.localeCompare(string2, undefined, { sensitivity: 'base' });
+// Print the result
+if (result == 0) {
+ console.log('The strings are similar.');
+} else {
+ console.log('The strings are not similar.');
+}

@@ -1,0 +1,119 @@
+• Remove Array Element
+
+console.log("Experiment-6A");
+console.log("Name: Avadhut Santosh Pawar");
+console.log("Roll No: E41100");
+function remove_array_element(array, n) {
+ console.log("Original Array:", array);
+ console.log("Element to be Removed:", n);
+ var index = array.indexOf(n);
+ if (index > -1) {
+ array.splice(index, 1);
+ }
+ console.log("Array after Removal:", array);
+ return array;
+}
+remove_array_element([1,2, 3, 4, 5, 9, 6], 5);
+
+#####################################################################
+
+• Removing the element from the array using a for loop
+console.log("Experiment-6A2");
+console.log("Name: Avadhut Santosh Pawar");
+console.log("Roll No: E41100");
+function removeItemFromArray(array, n) {
+ const newArray = [];
+ // Printing the original array and the element to be removed
+ console.log("Original Array:", array);
+ console.log("Element to be Removed:", n);
+ // Removing the element from the array using a for loop
+ for (let i = 0; i < array.length; i++) {
+ if (array[i] !== n) {
+ newArray.push(array[i]);
+ }
+ }
+ return newArray;
+}
+// Calling the function and storing the result
+const result = removeItemFromArray([1, 2, 3, 4, 5], 2);
+// Printing the resulting array after the removal
+console.log("Array after Removal:", result);
+
+#####################################################################
+
+
+• Checking if the array includes a specific value
+Code:
+console.log("Experiment-6B");
+console.log("Name: Avadhut Santosh Pawar");
+console.log("Roll No: E41100");
+// Initializing the array
+const array = ['I', 'will', 'learn', 'JavaScript'];
+// Checking if the array includes a specific value
+const hasValue = array.includes('JavaScript');
+// Checking the condition and printing the result
+if (hasValue) {
+ console.log('Array contains the value "JavaScript".');
+} else {
+ console.log('Array does not contain the value "JavaScript".');
+}
+
+#####################################################################
+
+• Program to empty an array - Method 1
+Code:
+console.log("Experiment-6C");
+console.log("Name: Avadhut Santosh Pawar");
+console.log("Roll No: E41100");
+// Function to empty the array using Method 1
+function emptyArray(arr) {
+ // Substituting a new array to empty the existing one
+ arr = [];
+ return arr;
+}
+// Original array
+const array = [1, 2, 3];
+console.log("Original Array:", array);
+// Call the function to empty the array
+const result = emptyArray(array);
+console.log("Array after Emptying:", result);
+
+#####################################################################
+
+Program to empty an array - Method 2
+
+console.log("Experiment-6C2");
+console.log("Name: Avadhut Santosh Pawar");
+console.log("Roll No: E41100");
+// Function to empty the array using Method 2
+function emptyArray(arr) {
+ // Using splice to remove all elements from the array
+ arr.splice(0, arr.length);
+ return arr;
+}
+// Original array
+const array = [1, 2, 3];
+console.log("Original Array:", array);
+// Call the function to empty the array
+const result = emptyArray(array);
+console.log("Array after Emptying:", result);
+
+#####################################################################
+
+• Program to empty an array - Method 3
+Code:
+console.log("Experiment-6C3");
+console.log("Name: Avadhut Santosh Pawar");
+console.log("Roll No: E41100");
+// Function to empty the array using Method 3
+function emptyArray(arr) {
+ // Setting the array length to 0 to empty it
+ arr.length = 0;
+ return arr;
+}
+// Original array
+const array = [1, 2, 3];
+console.log("Original Array:", array);
+// Call the function to empty the array
+const result = emptyArray(array);
+console.log("Array after Emptying:", result);

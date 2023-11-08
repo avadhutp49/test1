@@ -1,0 +1,89 @@
+Experiment8A.html
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Union Operation Example</title>
+</head>
+<body>
+<h1>Experiment-8A</h1>
+ <h3>Name: Avadhut Santosh Pawar <br> Roll no.: E41100</h3>
+<h2>Performing Union Operation</h2>
+ <p id="output"> </p><p id="setA"> </p><p id="setB"></p>
+ <script>
+ const setA = new Set(['apple', 'mango', 'orange']);
+ const setB = new Set(['grapes', 'apple', 'banana']);
+ const unionSet = new Set([...setA, ...setB]);
+ const outputParagraph = document.getElementById('output');
+ outputParagraph.textContent = `Union Set: ${[...unionSet]}`;
+ const setAParagraph = document.getElementById('setA');
+ setAParagraph.textContent = `Set A: ${[...setA]}`;
+ const setBParagraph = document.getElementById('setB');
+ setBParagraph.textContent = `Set B: ${[...setB]}`;
+ </script>
+</body>
+</html>
+
+#####################################################################
+
+• Experiment8B.html
+<!DOCTYPE html>
+<html><head>
+ <title>Intersection Operation Example</title>
+</head><body>
+ <h1>Experiment-8B</h1>
+ <h3>Name: Avadhut Santosh Pawar <br> Roll no.: E41100</h3>
+ <h2>Performing Intersection Operation</h2>
+ <p id="output"></p><p id="setA"></p> <p id="setB"></p>
+ <script>
+ function intersection(setA, setB) {
+ let intersectionSet = new Set();
+ for (let i of setB) {
+ if (setA.has(i)) {
+ intersectionSet.add(i);
+ }}
+return intersectionSet;
+}
+ const setA = new Set(['apple', 'mango', 'orange']);
+ const setB = new Set(['grapes', 'apple', 'banana']);
+ const result = intersection(setA, setB);
+ const outputParagraph = document.getElementById('output');
+ outputParagraph.textContent = `Intersection Set: ${[...result]}`;
+ const setAParagraph = document.getElementById('setA');
+ setAParagraph.textContent = `Set A: ${[...setA]}`;
+ const setBParagraph = document.getElementById('setB');
+ setBParagraph.textContent = `Set B: ${[...setB]}`;
+ </script>
+</body>
+</html>
+
+#####################################################################
+
+• Experiment8C.html
+<!DOCTYPE html>
+<html><head>
+ <title>Difference Operation Example</title>
+</head><body>
+ <h1>Experiment-8C</h1>
+ <h3>Name: Avadhut Santosh Pawar <br> Roll no.: E41100</h3>
+ <h2>Performing Difference Operation</h2>
+ <p id="output"></p><p id="setA"></p><p id="setB"></p>
+ <script>
+ function difference(setA, setB) {
+ let differenceSet = new Set(setA);
+ for (let i of setB) {
+ differenceSet.delete(i);
+ }
+ return differenceSet;
+ }
+ const setA = new Set(['apple', 'mango', 'orange']);
+ const setB = new Set(['grapes', 'apple', 'banana']);
+ const result = difference(setA, setB);
+ const outputParagraph = document.getElementById('output');
+ outputParagraph.textContent = `Difference Set: ${[...result]}`;
+ cnst setAParagraph = document.getElementById('setA');
+ setAParagraph.textContent = `Set A: ${[...setA]}`;
+ const setBParagraph = document.getElementById('setB');
+ setBParagraph.textContent = `Set B: ${[...setB]}`;
+ </script>
+</body>
+</html>

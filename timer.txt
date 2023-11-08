@@ -1,0 +1,24 @@
+console.log("Experiment-5");
+console.log("Name: Avadhut Santosh Pawar");
+console.log("Roll No: E41100");
+// Set the time to countdown from (in milliseconds)
+let countDownDate = new Date().getTime() + 24 * 60 * 60 * 1000; // 24 hours from now
+// Countdown timer
+let x = setInterval(function() {
+ // Get today's date and time in milliseconds
+ let now = new Date().getTime();
+ // Find the interval between now and the countdown time
+ let timeLeft = countDownDate - now;
+ // Time calculations for days, hours, minutes, and seconds
+ const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+ const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+ const minutes = Math.floor((timeLeft / 1000 / 60) % 60);
+ const seconds = Math.floor((timeLeft / 1000) % 60);
+ // Display the result in the console
+ console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s");
+ // Clear the countdown when complete
+ if (timeLeft < 0) {
+ clearInterval(x);
+ console.log('Countdown Finished');
+ }
+}, 2000); // Update every 2 seconds

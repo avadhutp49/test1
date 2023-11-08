@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>String Operations</title>
+<h3>Name : Avadhut Santosh Pawar<br> Roll no. : E41100</h3></head>
+<body>
+<script>
+function reverseString(str) {
+ return str.split('').reverse().join('');
+}
+function replaceCharacters(str, oldChar, newChar) {
+ return str.split(oldChar).join(newChar);
+}
+function isPalindrome(str) {
+ const cleanedStr = str.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+ const reversedStr = reverseString(cleanedStr);
+ return cleanedStr === reversedStr;
+}
+const inputString = "racecar";
+const replacementOldChar = "a";
+const replacementNewChar = "o";
+document.write("<p>Original String: " + inputString + "</p>");
+document.write("<p>Reversed String: " + reverseString(inputString) + "</p>");
+document.write("<p>String after replacement: " + replaceCharacters(inputString,
+replacementOldChar, replacementNewChar) + "</p>");
+if (isPalindrome(inputString)) {
+ document.write("<p>The string is a palindrome.</p>");
+} else {
+ document.write("<p>The string is not a palindrome.</p>");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+Experiment7A.html
+<!DOCTYPE html>
+<html><head>
+ <title>Array and Object Operations</title>
+</head><body>
+ <h1>Experiment-7A</h1>
+ <h3>Name: Avadhut Santosh Pawar <br> Roll no.: E41100</h3>
+ <h2>Program to append an object to an array and check if the object is an array</h2
+ <p id="originalArray"></p><p id="objectToAdd"></p><p id="checkIfArray"></p>
+ <script>
+ function insertObject(arr, obj) {
+ arr.push(obj);
+ console.log(arr);
+ }
+ function checkObject(arr) {
+ const result = Array.isArray(arr);
+ if (result) {
+ document.getElementById('checkIfArray').textContent = `[${arr}] is an array.`;
+ } else {
+ document.getElementById('checkIfArray').textContent = `${arr} is not an array.`;
+ }
+ }
+ let array = [1, 2, 3];
+ document.getElementById('originalArray').textContent = `Original Array: [${array}]`;
+ let object = { x: 12, y: 8 };
+ document.getElementById('objectToAdd').
+textContent = `Object to Add: ${JSON.stringify(object)}`
+ checkObject(object);
+ insertObject(array, object);
+ </script>
+</body>
+</html>
+
+#####################################################################
+
+• Experiment7B.html
+<!DOCTYPE html>
+<html><head>
+ <title>Adding object in array</title>
+</head><body>
+ <h1>Experiment-7B</h1>
+ <h3>Name: Avadhut Santosh Pawar <br> Roll no.: E41100</h3>
+ <h2>Program to Add Element in Array using Splice Method</h2>
+ <p>Click the button to add new elements to the array.</p>
+ <button onclick="spliceFunction()">Add elements</button>
+ <p id="output"></p><script>
+ var list = ["HTML", "CSS", "JavaScript"];
+ document.getElementById("output").textContent = list;
+ function spliceFunction() {
+ list.splice(2, 0, "Angular", "SQL");
+ document.getElementById("output").textContent = list;}
+ </script>
+</body>
+</html>
